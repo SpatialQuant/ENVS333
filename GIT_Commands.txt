@@ -1,0 +1,33 @@
+GIT Terminal Commands
+
+pdw 	-to get current working directory
+cd  	-to change working directory
+cd ..	-to move directory one level up
+cd folder/ -to move one level down
+mkdir  	-to make a new directory
+ls 	-list files  
+mv	-move files (example <$ mv AdvancedGIS gitsrc/.>)git 
+
+The GIT Workflow to push
+1. git init 		-initalizes the git repository
+2. git status		- lists files in the master to commit
+3. git add . 		- adds all files in repo)
+4. git commit -m "include a short message here" - completes the commit to GIT 
+
+#For creating a new repo in GitHub
+5a. In GitHub.com create a new repo
+5b. git remote add origin https://github.com/SpatialQuant/<repo>.git
+6. git push -u origin master
+
+#if exisiting repo in GitHub.com
+6. git push -u origin mastercd
+
+The GIT workflow to clone/pull
+1. cd <folder>/
+
+2. git clone <GitHub directory> (only needed for first time download)
+or
+2. git pull (if repo has already been previously cloned)
+
+
+
