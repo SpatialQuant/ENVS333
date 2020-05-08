@@ -1,0 +1,32 @@
+In anaconda prompt and in the deeplearn virtual environment, install the following:
+
+conda install -c anaconda requests
+
+conda install -c conda-forge opencv
+
+conda install -c conda-forge imutils
+
+
+In Google Chrome:
+
+1. enter search condition
+
+2. scroll to bottom of the page (or until you have enough images)
+
+3. right-click and select "Inspect"
+
+4. In the Inspect window, select the "Console" tab
+
+5. In the code box, copy/paste the following:
+
+urls=Array.from(document.querySelectorAll('.rg_i')).map(el=> el.hasAttribute('data-src')?el.getAttribute('data-src'):el.getAttribute('data-iurl')); 
+
+ then select "Enter" button
+
+6. Then copy/paste the following command:
+
+window.open('data:text/csv;charset=utf-8,' + escape(urls.join('\n'))); 
+
+* at this point, a file named "Download" will be downloaded to your Users/downloads directory
+
+7. Close Google Chrome and open the "Scrape" jupyter notebook.
